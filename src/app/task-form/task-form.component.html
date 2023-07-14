@@ -1,0 +1,15 @@
+<!-- Level 1: Create Task Form HTML here, stylesheet available in task-form.component.scss -->
+<div class="create-task-form">
+    <h2 class="create-task-form__title">Create task</h2>
+    <form #f="ngForm">
+        <div class="create-task-form__input">
+            <input name="title" placeholder="Title*" ngModel required />
+        </div>
+        <div class="create-task-form__input">
+            <textarea name="description" placeholder="Description*" ngModel required></textarea>
+        </div>
+        <div class="create-task-form__input">
+            <input type="submit" value="Add new task" />
+        </div>
+    </form>
+</div>

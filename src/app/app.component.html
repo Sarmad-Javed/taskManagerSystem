@@ -1,0 +1,20 @@
+<main>
+  <!-- Level 1: Add the "Create task" form here -->
+  <div class="board">
+    <h2 class="board__title">Tasks</h2>
+    <div class="board__columns">
+      <app-column
+        [title]="'To Do'"
+        [tasks]="toDoTasks"
+      ></app-column>
+      <app-column
+        [title]="'In Progress'"
+        [tasks]="inProgressTasks"
+      ></app-column>
+      <app-column
+        [title]="'Done'"
+        [tasks]="doneTasks"
+      ></app-column>
+    </div>
+  </div>
+</main>

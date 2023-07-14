@@ -1,0 +1,47 @@
+.create-task-form {
+    .create-task-form__title {
+      color: white;
+      font-weight: 700;
+    }
+  
+    form {
+      width: calc((100% - 20px) / 3);
+      min-width: 250px;
+      padding: 10px 0 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+      .create-task-form__input {
+        width: 100%;
+  
+        input[type=submit]:hover {
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, 0.9);
+        }
+  
+        input, textarea {
+          width: 100%;
+          font-family: sans-serif;
+          border-radius: 3px;
+          border: none;
+          background: rgb(255, 255, 255);
+          padding: 5px;
+          font-size: 14px;
+        }
+  
+        input[type=submit] {
+          font-size: 16px;
+          border: none;
+          color: rgb(0, 0, 0);
+          border-radius: 3px;
+          padding: 10px 20px;
+          background-color: rgb(255, 255, 255);
+        }
+  
+        textarea {
+          height: 100px;
+        }
+      }
+    }
+  }

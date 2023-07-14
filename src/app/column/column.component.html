@@ -1,0 +1,11 @@
+<div class="column">
+  <h2 class="column__title">{{title}}</h2>
+  <div class="column__cards">
+    <!--Level 2: Add task input to app-task component -->
+    <app-task
+      *ngFor="let task of tasks"
+      [title]="task.title"
+      [description]="task.description"
+    ></app-task>
+  </div>
+</div>

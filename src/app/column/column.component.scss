@@ -1,0 +1,15 @@
+:host {
+  flex: 1;
+}
+
+.column {
+  background-color: rgb(235, 236, 240);
+  border-radius: 3px;
+  padding: 10px;
+
+  .column__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,48 @@
+.card {
+  background-color: white;
+  box-shadow: rgba(9, 30, 66, 0.25) 0 1px 0 0;
+  padding: 6px 10px;
+  border-radius: 3px;
+
+  .card__description {
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+  }
+
+  .card__owner {
+    color: rgb(128, 128, 128);
+    font-size: 12px;
+  }
+
+  .card__buttons {
+    width: 100%;
+    display: flex;
+    align-items: start;
+
+    .card__button {
+      border: none;
+      font: inherit;
+      cursor: pointer;
+      outline: none;
+      background-color: rgb(0, 121, 191);
+      color: #fff;
+      border-radius: 3px;
+      height: 25px;
+      width: 25px;
+    }
+
+    .card__button:hover {
+      background-color: rgb(2, 106, 167);
+    }
+
+    .card__button--right {
+      margin-left: auto;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='25' height='25'><g id='arrow-forward'><polygon fill='white' points='12,4 10.6,5.4 16.2,11 4,11 4,13 16.2,13 10.6,18.6 12,20 20,12'/></g></svg>");
+    }
+
+    .card__button--left {
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='25' height='25'><g id='arrow-forward'><polygon fill='white' points='12,4 10.6,5.4 16.2,11 4,11 4,13 16.2,13 10.6,18.6 12,20 20,12'/></g></svg>");
+      transform: rotate(180deg);
+    }
+  }
+}

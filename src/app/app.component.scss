@@ -1,0 +1,18 @@
+main {
+  font-family: sans-serif;
+
+  .board {
+    .board__title {
+      color: white;
+      font-weight: 700;
+    }
+
+    .board__columns {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  }
+}
+
